@@ -24,7 +24,7 @@ $clienteA->setEmail("joaopedro18231@hotmail.com");
 
 
 $clienteB->setNome("Pedro");
-$clienteB->setIdade("20");
+$clienteB->setIdade(20);
 $clienteB->setEmail("pedro@hotmail.com");
 ?>
 
