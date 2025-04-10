@@ -18,14 +18,14 @@ $clienteA = new Cliente();
 $clienteB = new Cliente();
 
 // Atribuindo valores para os atributos
-$clienteA->nome = "João Pedro";
-$clienteA->idade = 28;
-$clienteA->email = "joaopedro18231@hotmail.com";
+$clienteA->setNome("João Pedro");
+$clienteA->setIdade(28);
+$clienteA->setEmail("joaopedro18231@hotmail.com");
 
 
-$clienteB->nome = "Pedro";
-$clienteB->idade = "20";
-$clienteB->email = "pedro@hotmail.com";
+$clienteB->setNome("Pedro");
+$clienteB->setIdade("20");
+$clienteB->setEmail("pedro@hotmail.com");
 ?>
 
 <h2>Acessando/lendo os dados dos objetos</h2>
