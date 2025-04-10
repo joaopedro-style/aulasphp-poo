@@ -30,20 +30,10 @@ $clienteB->email = "pedro@hotmail.com";
 
 <h2>Acessando/lendo os dados dos objetos</h2>
 
-<h3>ClienteA</h3>
-<div>
-    <?=$clienteA->exibirDados()?>
-</div>
-
 <ul>
     <li><b>Idade:</b> <?=$clienteA->idade?> </li>
     <li><b>E-mail:</b> <?=$clienteA->email?> </li>
 </ul>
-
-<h3>ClienteB</h3>
-<div>
-    <?=$clienteB->exibirDados()?>
-</div>
 
 <ul>
     <li><b>Idade:</b> <?=$clienteB->idade?> </li>
