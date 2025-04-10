@@ -17,7 +17,7 @@ require_once "src/Cliente.php";
 $clienteA = new Cliente();
 $clienteB = new Cliente();
 
-// Atribuindo valores para os atributos
+// inserindo valores atribuido ao setters
 $clienteA->setNome("João Pedro");
 $clienteA->setIdade(28);
 $clienteA->setEmail("joaopedro18231@hotmail.com");
@@ -31,13 +31,15 @@ $clienteB->setEmail("pedro@hotmail.com");
 <h2>Acessando/lendo os dados dos objetos</h2>
 
 <ul>
-    <li><b>Idade:</b> <?=$clienteA->idade?> </li>
-    <li><b>E-mail:</b> <?=$clienteA->email?> </li>
+    <li><b>Nome:</b> <?=$clienteA->getNome()?> </li>
+    <li><b>Idade:</b> <?=$clienteA->getIdade()?> </li>
+    <li><b>E-mail:</b> <?=$clienteA->getEmail()?> </li>
 </ul>
 
 <ul>
-    <li><b>Idade:</b> <?=$clienteB->idade?> </li>
-    <li><b>E-mail:</b> <?=$clienteB->email?> </li>
+    <li><b>Nome:</b> <?=$clienteA->getNome()?> </li>
+    <li><b>Idade:</b> <?=$clienteB->getIdade()?> </li>
+    <li><b>E-mail:</b> <?=$clienteB->getEmail()?> </li>
 </ul>
 
 <h2>Testes de acesso aos recursos da classe através do objeto</h2>
