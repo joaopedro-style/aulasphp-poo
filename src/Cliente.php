@@ -5,7 +5,7 @@ class Cliente
     private string $email;
 
     // Método Construtor (Sempre é executado automaticamente ao criar objeto)
-    public function __construct(string $nome, int $idade, string $email)
+    public function __construct(string $nome, string $email)
     {
         $this->setNome($nome);
         $this->setEmail($email);
