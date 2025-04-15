@@ -10,31 +10,8 @@
     <hr>
 
 <?php
-require_once "src/Cliente.php";
 
-$clienteA = new Cliente("João Pedro", 28, "joaopedro18231@hotmail.com");
-$clienteB = new Cliente("Pedro", 20, "pedro@hotmail.com");
 ?>
-
-<h2>Acessando/lendo os dados dos objetos</h2>
-
-<ul>
-    <li><b>Nome:</b> <?=$clienteA->getNome()?> </li>
-    <li><b>Idade:</b> <?=$clienteA->getIdade()?> </li>
-    <li><b>E-mail:</b> <?=$clienteA->getEmail()?> </li>
-    <li><b>Faixa etária:</b> <?=$clienteA->verificarIdade()?> </li>
-</ul>
-
-<ul>
-    <li><b>Nome:</b> <?=$clienteB->getNome()?> </li>
-    <li><b>Idade:</b> <?=$clienteB->getIdade()?> </li>
-    <li><b>E-mail:</b> <?=$clienteB->getEmail()?> </li>
-    <li><b>Faixa etária:</b> <?=$clienteB->verificarIdade()?> </li>
-</ul>
-
-<h2>Testes de acesso aos recursos da classe através do objeto</h2>
-
-<pre><?=var_dump($clienteA, $clienteB)?></pre>
 
 </body>
 </html>
