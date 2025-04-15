@@ -5,7 +5,14 @@ class Cliente
     private int $idade;
     private string $email;
 
-    /* Métodos setters: responsável por receber/atribuir dados para as propriedades/atributos */
+    // Método Construtor (Sempre é executado automaticamente ao criar objeto)
+    public function __construct(string $nome, int $idade, string $email)
+    {
+        $this->setNome($nome);
+        $this->setIdade($idade);
+        $this->setEmail($email);
+    }
+
     public function setNome(string $nome): void
     {
         $this->nome = $nome;
@@ -29,7 +36,6 @@ class Cliente
         $this->email = $email;
     }
 
-    /* Métodos getters: responsável por acessar/ler os dados */
     public function getNome(): string
     {
         return $this->nome;

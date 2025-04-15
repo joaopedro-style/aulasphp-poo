@@ -3,29 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo 02</title>
+    <title>Exemplo 03</title>
 </head>
 <body>
-    <h1>PHP com POO - Exemplo 02</h1>
+    <h1>PHP com POO - Exemplo 03</h1>
     <hr>
 
 <?php
-// Carregando/importando a classe
 require_once "src/Cliente.php";
 
-// Criando objeto/instância da classe
-$clienteA = new Cliente();
-$clienteB = new Cliente();
-
-// inserindo valores atribuido ao setters
-$clienteA->setNome("João Pedro");
-$clienteA->setIdade(28);
-$clienteA->setEmail("joaopedro18231@hotmail.com");
-
-
-$clienteB->setNome("Pedro");
-$clienteB->setIdade(20);
-$clienteB->setEmail("pedro@hotmail.com");
+$clienteA = new Cliente("João Pedro", 28, "joaopedro18231@hotmail.com");
+$clienteB = new Cliente("Pedro", 20, "pedro@hotmail.com");
 ?>
 
 <h2>Acessando/lendo os dados dos objetos</h2>
