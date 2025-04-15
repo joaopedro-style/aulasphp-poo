@@ -14,8 +14,8 @@ class Cliente
     }
 
     public function verificarIdade(): string {
-        if ( $this->idade < 18 ) return "menor de idade";
-        if($this->idade < 60) return "adulto";
+        if( $this->idade < 18 ) return "menor de idade";
+        if( $this->idade < 60 ) return "adulto";
         return "idoso";
     }
 
