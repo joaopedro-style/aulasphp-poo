@@ -15,8 +15,9 @@ class Cliente
         $this->setEmail($email);
         $this->setSituacao($situacao);
     }
-
-    private function setSituacao(Situacao $situacao):void {
+    
+    /* Visibilidade protegida: desta forma, este método pode ser usado aqui em Cliente (superclasse) e também nas subclasses. o acesso externo (no caso, em index) continua sendo bloqueado. */
+    protected function setSituacao(Situacao $situacao):void {
         $this->situacao = $situacao;
     }
 
