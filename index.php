@@ -10,6 +10,7 @@
     <hr>
 
 <?php
+require_once "src/Situacao.php"; // Enum
 require_once "src/Cliente.php"; // Superclasse
 require_once "src/PessoaFisica.php"; // subclasse
 

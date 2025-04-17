@@ -3,12 +3,25 @@ class Cliente
 {
     private string $nome;
     private string $email;
+    private Situacao $situacao;
 
-    // Método Construtor (Sempre é executado automaticamente ao criar objeto)
-    public function __construct(string $nome, string $email)
+    /* Definindo a situação INATIVA como valor padrão
+    para o parâmetro situacao no construtor. */
+    public function __construct(
+        string $nome, string $email, Situacao $situacao = Situacao::INATIVO
+        )
     {
         $this->setNome($nome);
         $this->setEmail($email);
+        $this->setSituacao($situacao);
+    }
+
+    private function setSituacao(Situacao $situacao):void {
+        $this->situacao = $situacao;
+    }
+
+    public function getSituacao():Situacao {
+        return $this->situacao;
     }
 
     public function setNome(string $nome): void
