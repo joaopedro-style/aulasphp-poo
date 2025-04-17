@@ -13,11 +13,14 @@
 require_once "src/Situacao.php"; // Enum
 require_once "src/Cliente.php"; // Superclasse
 require_once "src/PessoaFisica.php"; // subclasse
+require_once "src/PessoaJuridica.php"; // subclasse
 
 $clientePF = new PessoaFisica("João Pedro", "joaopedro18231@hotmail.com", 28, "569.458.666-07");
+$clientePJ = new PessoaJuridica(
+"Pedro Henrique", "pedrohenrique@hotmail.com", "32.789.5555/000-1", 2022, "Corporação Tabajara");
 ?>
 
-<pre><?=var_dump($clientePF)?></pre>
+<pre><?=var_dump($clientePF, $clientePJ)?></pre>
 
 
 
