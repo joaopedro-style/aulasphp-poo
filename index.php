@@ -29,9 +29,13 @@ não podemos criar objeto a partir dela. */
 
     <h3>PF</h3>
     <?=$clientePF->relatorio()?>
+    
+    <!-- Acessamos as opções do Enum através do getSituacao()->name -->
+    <p><b>situação:</b> <?=$clientePF->getSituacao()->name?> </p>
 
     <h3>PJ</h3>
     <?=$clientePJ->relatorio()?>
+    <p><b>situação:</b> <?=$clientePJ->getSituacao()->name?> </p>
 
 
 </body>
