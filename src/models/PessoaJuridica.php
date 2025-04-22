@@ -1,5 +1,7 @@
 <?php
-class PessoaJuridica extends Cliente {
+/* Classe Final: não permite herança, ou seja, não será possivel
+criar uma subclasse que extenda pessoaJuridica */
+final class PessoaJuridica extends Cliente {
     private string $cnpj;
     private int $anoFundacao;
     private string $nomeFantasia;
