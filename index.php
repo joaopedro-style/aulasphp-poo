@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo 05</title>
+    <title>Exemplo 06</title>
 </head>
 <body>
-    <h1>PHP com POO - Exemplo 05</h1>
+    <h1>PHP com POO - Exemplo 06</h1>
     <hr>
 
 <?php
