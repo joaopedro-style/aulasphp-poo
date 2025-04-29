@@ -14,10 +14,9 @@
 use MeuProjeto\Models\PessoaFisica;
 use MeuProjeto\Models\PessoaJuridica;
 
-require_once "src/Enums/Situacao.php"; // Enum
-require_once "src/Models/Cliente.php"; // Superclasse
-require_once "src/Models/PessoaFisica.php"; // subclasse
-require_once "src/Models/PessoaJuridica.php"; // subclasse
+/* substituimos TODOS OS REQUIRES anteriores,
+por um ÚNICO REQUIRE apontando para o autoload */
+require_once "vendor/autoload.php";
 
 $clientePF = new PessoaFisica("João Pedro", "joaopedro18231@hotmail.com", 28, "569.458.666-07");
 $clientePJ = new PessoaJuridica(
