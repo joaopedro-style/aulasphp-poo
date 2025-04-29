@@ -11,6 +11,8 @@
 
 <?php
 /* Sempre que trabalharmos com namespaces, será necessário especificar através do 'use' quais classes/enums/funções serão usadas. */
+
+use MeuProjeto\Calculadora;
 use MeuProjeto\Models\PessoaFisica;
 use MeuProjeto\Models\PessoaJuridica;
 
@@ -22,7 +24,9 @@ $clientePF = new PessoaFisica("João Pedro", "joaopedro18231@hotmail.com", 28, "
 $clientePJ = new PessoaJuridica(
 "Pedro Henrique", "pedrohenrique@hotmail.com", "32.789.5555/000-1", 2022, "Corporação Tabajara");
 
-
+/* Acessando um método estático (ou seja, sem passar por um objeto) */
+$total = Calculadora::somar(10, 5);
+echo $total;
 ?>
 
     <h2>relatórios</h2>
