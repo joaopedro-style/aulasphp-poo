@@ -1,6 +1,13 @@
 <?php
-/* Classe abstract: não pode ser instanciada.
-com isso, será possivel criar objetos apenas a partir das subclasses. */
+
+namespace MeuProjeto\Models;
+
+// Usamos o 'use' para indicar a utilização de outras classes/enums que temos
+use MeuProjeto\Enums\Situacao;
+
+// Usamos o 'use' tambem para indicar a ultilização de classes internas do PHP
+use InvalidArgumentException;
+
 abstract class Cliente
 {
     private string $nome;

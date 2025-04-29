@@ -1,6 +1,7 @@
 <?php
-/* Classe Final: não permite herança, ou seja, não será possivel
-criar uma subclasse que extenda pessoaJuridica */
+
+namespace MeuProjeto\Models;
+
 final class PessoaJuridica extends Cliente {
     private string $cnpj;
     private int $anoFundacao;
